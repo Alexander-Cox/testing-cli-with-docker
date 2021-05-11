@@ -1,0 +1,10 @@
+name: Smoke Test
+on: [push]
+jobs:
+  Install-CLI-And-Run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: print working directory
+        run: pwd
