@@ -10,3 +10,5 @@ jobs:
       #   run: sudo chown -R $USER /usr/local/lib/node_modules
       - name: install cli component
         run: sudo npm i -g .
+      - name: run cli command
+        run: question-me
