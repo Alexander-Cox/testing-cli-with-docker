@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      - name: change global node_module ownership
+        run: sudo chown -R $USER /usr/local/lib/node_modules
       - name: install cli component
         run: npm i -g .
