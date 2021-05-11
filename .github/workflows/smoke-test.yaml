@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: print working directory
-        run: pwd
+      - name: install cli component
+        run: npm i -g .
